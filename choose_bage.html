@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pets type</title>
+    <script
+      src="https://kit.fontawesome.com/b1971438e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 100px;
+        overflow-x: hidden;
+      }
+      section {
+        display: flex;
+        margin-top: 80px;
+        justify-content: end;
+      }
+      h1 {
+        color: white;
+      }
+      div {
+        margin-right: 100px;
+        width: 330px;
+        height: 380px;
+        background: rgb(51, 51, 51);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 23px 8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 23px 8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 23px 8px rgba(0, 0, 0, 0.75);
+      }
+      div:hover {
+        box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75);
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        object-fit: fill;
+        width: 200px;
+      }
+      .card {
+        width: 30px;
+        height: 30px;
+        transform: scale(0, 0);
+      }
+      .card2 {
+        width: 30px;
+        height: 30px;
+        transform: scale(0, 0);
+      }
+      .card3 {
+        width: 30px;
+        height: 30px;
+        transform: scale(0, 0);
+      }
+      .big-card {
+        transform: scale(1, 1);
+        transition: all 2s;
+      }
+      .big-card2 {
+        transform: scale(1, 1);
+        transition: all 2s;
+      }
+      .big-card3 {
+        transform: scale(1, 1);
+        transition: all 2s;
+      }
+    </style>
+  </head>
+  <body onload="chooseBage()">
+    <section>
+      <a href="cat.html">
+        <div class="card">
+          <h1>Cats</h1>
+          <img src="imgs/cat.png" alt="" />
+        </div>
+      </a>
+      <a href="dog.html">
+        <div class="card2">
+          <h1>Dogs</h1>
+          <img src="imgs/dog.png" alt="" />
+        </div>
+      </a>
+      <a href="bird.html">
+        <div class="card3">
+          <h1>Birds</h1>
+          <img src="imgs/robin.png" alt="" />
+        </div>
+      </a>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birds</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      body {
+        background: rgba(236, 236, 236, 0.836);
+        overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+      }
+      .containor {
+        display: flex;
+        width: 70%;
+        height: 70%;
+        background: rgb(31, 31, 31);
+        margin-top: 4%;
+        /* height: 522px; */
+        color: rgb(218, 218, 218);
+        font-size: large;
+        display: flex;
+        justify-content: space-between;
+      }
+      img {
+        object-fit: cover;
+        width: 70%;
+        max-width: 70%;
+        margin-left: 120px;
+      }
+      div {
+        width: 100%;
+        margin-left: 25px;
+        margin-top: 30px;
+      }
+      h1 {
+        border-bottom: 2px rgba(236, 236, 236, 0.836) solid;
+        width: fit-content;
+        padding-bottom: 10px;
+        color: white;
+        padding-top: 20px;
+        margin-left: 380px;
+      }
+      .birdTitle {
+        transform: scale(0.2, 0.2);
+      }
+      .birdTitle-well {
+        transform: scale(1, 1);
+        transition: all 0.7s;
+      }
+      p {
+        padding-bottom: 30px;
+        text-align: center;
+        width: 90%;
+        margin-top: 13px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body onload="wellcontainor()">
+    <section class="containor">
+      <div>
+        <img src="imgs/pirdpic.jpg" alt="" class="image" />
+        <h1 class="birdTitle">B i r d s</h1>
+        <p class="birdPara">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus cum
+          reiciendis sapiente est facere impedit. Odio obcaecati omnis facilis!
+          Ipsa, at fugit rerum nesciunt debitis ex quae error eligendi
+          perferendis corporis sapiente aliquam itaque consectetur vitae quasi
+        </p>
+      </div>
+    </section>
+    <script>
+      const birdsTitle = document.querySelector(".birdTitle");
+
+      function wellcontainor() {
+        birdsTitle.classList.remove("birdTitle");
+        birdsTitle.classList.add("birdTitle-well");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dogs</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      body {
+        background: rgba(236, 236, 236, 0.836);
+        overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+      }
+      .containor {
+        display: flex;
+        width: 80%;
+        /* height: 80%; */
+        background: #fff;
+        margin-top: 5%;
+        height: 522px;
+      }
+      .containor > img {
+        object-fit: cover;
+        width: 400px;
+        box-shadow: 11px -14px 14px -12px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 11px -14px 14px -12px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 11px -14px 14px -12px rgba(0, 0, 0, 0.75);
+        position: absolute;
+        top: 5%;
+        left: 13%;
+      }
+      article {
+        margin-left: 490px;
+        margin-top: 50px;
+      }
+      .advices {
+        border-top: 3px rgba(236, 236, 236, 0.836) solid;
+      }
+      .advice img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        position: relative;
+        border-radius: 50px;
+        display: inline-block;
+        top: 60px;
+      }
+      .advice p {
+        padding-left: 60px;
+        display: inline-block;
+        font-size: 20px;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 60px;
+      }
+      .advicH1 {
+        /* transform: translateX(-150px); */
+        transform: scale(0.3, 0.3);
+      }
+      .advice-well {
+        /* transform: translateX(0px); */
+        transition: all 1s;
+        transform: scale(1, 1);
+      }
+    </style>
+  </head>
+  <body onload="advice()">
+    <section class="containor">
+      <img src="imgs/dogpic (2).jpg" alt="" class="advicH1" />
+      <article>
+        <h1>Dog Care Advice</h1>
+        <div class="advices">
+          <div class="advice">
+            <img src="imgs/dogAdvice.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+              maiores ratione. Nemo modi temporibus quis doloribus. Ullam
+              assumenda ipsum fugiat!
+            </p>
+          </div>
+          <div class="advice">
+            <img src="imgs/dogAdvice2.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+              maiores ratione. Nemo modi temporibus quis doloribus. Ullam
+              assumenda ipsum fugiat!
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
